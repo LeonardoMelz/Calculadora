@@ -1,50 +1,23 @@
 package com.fundatec.lp1.calculadora;
 
-import static org.junit.Assert.assertArrayEquals;
-
 import java.util.Scanner;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-public class Calculadora {  
+public class Calculadora {
+	Scanner input = new Scanner(System.in);
 
 	public static void main(final String[] args) {
-    
-}
+		Calculo c = new Calculo();
+		int resultado;
+		c.setNum1(4);
+		c.setNum2(2);
+		resultado = c.Soma();
+		System.out.println(resultado);
+		resultado = c.Divisao();
+		System.out.println(resultado);
+		resultado = c.Multi();
+		System.out.println(resultado);
+		resultado = c.Subtr();
+		System.out.println(resultado);
 
- 
-private int num1, num2;
-
-public void setNum1(final int NUM1) {
-    this.num1 = NUM1;
-}
-
-public int getNum1() {
-    return this.num1;
-}
-
-public void setNum2(final int NUM2) {
-    this.num2 = NUM2;
-}
-
-public int getNum2() {
-    return this.num2;
-}
-
-public int Soma() {
-    return num1 + num2;
-}
-
-public int Subtr() {
-    return num1 - num2;
-}
-
-public int Divisao() {
-    return num1 / num2;
-}
-
-public int Multi() {
-    return num1 * num2;
-}
 	}
+}

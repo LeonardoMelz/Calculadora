@@ -10,7 +10,7 @@ public class CalculadoraTest {
 	 @Test
 	 public void deveTestarSoma() {
 		 
-		 Calculadora c = new Calculadora();
+		 Calculo c = new Calculo();
 		    int resultado;
 		    c.setNum1(1);
 		    c.setNum2(2);
@@ -18,11 +18,11 @@ public class CalculadoraTest {
 		    Assert.assertEquals(3, resultado);
 	 
 	 }
-	 
+	
 	 @Test
 	 public void deveTestarSubtracao() {
 		 
-		 Calculadora c = new Calculadora();
+		 Calculo c = new Calculo();
 		    int resultado;
 		    c.setNum1(2);
 		    c.setNum2(2);
@@ -35,7 +35,7 @@ public class CalculadoraTest {
 	 @Test
 	 public void deveTestarMultiplicacao() {
 		 
-		 Calculadora c = new Calculadora();
+		 Calculo c = new Calculo();
 		    int resultado;
 		    c.setNum1(2);
 		    c.setNum2(2);
@@ -48,7 +48,7 @@ public class CalculadoraTest {
 	 public void deveTestarDivicao() {
 
 		 
-		 Calculadora c = new Calculadora();
+		 Calculo c = new Calculo();
 		    int resultado;
 		    c.setNum1(4);
 		    c.setNum2(2);
